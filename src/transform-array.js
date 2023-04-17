@@ -16,6 +16,8 @@ const { NotImplementedError } = require('../extensions/index.js');
 function transform(arr) {
   if(!(arr instanceof Array)){
     throw new Error("'arr' parameter must be an instance of the Array!");
+  }else{
+    return arr;
   }
 }
 
