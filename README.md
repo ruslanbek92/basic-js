@@ -477,22 +477,22 @@ are integrated from [Short track 2021 repo](https://github.com/rkhaslarov/rs-sch
 
 Carbon dating - 8.43373494
 Common character count - 1.204819277
-Count cats! - 10.84337349
+Count cats! - 10.84337349 done!
 Delete digit - 1.204819277
 DNS stats - 1.204819277
-Dream team - 10.84337349
+Dream team - 10.84337349 Done !
 Encode line - 1.204819277
-Extended repeater - 13.25301205
+Extended repeater - 13.25301205 Done!
 File names - 1.204819277
 Get email domain - 1.204819277
 Hanoi tower - 2.409638554
 MAC address - 1.204819277
 Matrix elements sum - 1.204819277
 Minesweeper - 1.204819277
-Recursive depth - 4.819277108
+Recursive depth - 4.819277108 
 Make chain! - 6.024096386
 Sort by height - 1.204819277
 Sum digits - 1.204819277
-Transform array - 9.638554217
-Vigenere cipher - 9.638554217
-What season - 10.84337349
+Transform array - 9.638554217 
+Vigenere cipher - 9.638554217 half done!
+What season - 10.84337349 Mostly done!
