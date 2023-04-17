@@ -475,7 +475,7 @@ are integrated from [Short track 2021 repo](https://github.com/rkhaslarov/rs-sch
 
 & Thanks [mikhama](https://github.com/mikhama) for assistance!
 
-Carbon dating - 8.43373494
+Carbon dating - 8.43373494 half done
 Common character count - 1.204819277
 Count cats! - 10.84337349 done!
 Delete digit - 1.204819277
@@ -490,7 +490,7 @@ MAC address - 1.204819277
 Matrix elements sum - 1.204819277
 Minesweeper - 1.204819277
 Recursive depth - 4.819277108 
-Make chain! - 6.024096386
+Make chain! - 6.024096386  
 Sort by height - 1.204819277
 Sum digits - 1.204819277
 Transform array - 9.638554217 
