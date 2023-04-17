@@ -3,9 +3,7 @@ const { NotImplementedError } = require("../extensions/index.js");
 /**
  * Create a repeating string based on the given parameters
  *
- * @param {String} str string to repeat
- * @param {Object} options options object
- * @return {String} repeating string
+
  *
  *
  * @example
@@ -16,40 +14,41 @@ const { NotImplementedError } = require("../extensions/index.js");
  *
  */
 function repeater(str, options) {
-//   let newString;
+let string = (typeof str === 'string') ? str : String(str);
 
-//   if(options.seperator===undefined){
-//     options.seperator="+";
-//   }
-//   if(options.additionSeperator===undefined){
-//     options.additionSeperator="|";
-//   }
+let repeatTimes = 0;
+let additionRepeatTimes = 0;
+let separator = "+";
+let additionSeparator = "|";
+let result = additionResult = addition = "";
 
-//   if(typeof str!=="string"){
-//     str=""+str;
-//   }
+if (options !== undefined) {
+  addition = (options.addition !== undefined) ? String(options.addition) : addition;
+  repeatTimes = (options.repeatTimes !== undefined) ? options.repeatTimes : repeatTimes;
+  additionRepeatTimes = (options.additionRepeatTimes !== undefined )? options.additionRepeatTimes : additionRepeatTimes;
+  separator = (options.separator !==undefined) ? options.separator : separator;
+  additionSeparator = (options.additionSeparator !==undefined) ? options.additionSeparator : additionSeparator;
+}
+result = string;
+let arr = [];
+if(repeatTimes>0){
+  for (let i = 0; i < repeatTimes; i++) {
+    arr.push(string);
+  }
+  result = arr.join(separator);
+}
 
-//   if(typeof addition!=="string"){
-//     options.addition=""+options.addition;
-//   }
+additionResult = addition;
+arr = [];
+if (additionRepeatTimes>0) {
+  for (let i = 0; i < additionRepeatTimes; i++) {
+    arr.push(addition);
+  }
+  additionResult = arr.join(additionSeparator);
+}
 
-//   // console.log(options);
-//   if(options.additionRepeatTimes1==undefined){
-//     for(let i=0; i<options.additionRepeatTimes;i++){
-//       str=str.concat(options.additionSeperator,options.addition);
-//       }
+return result.split(separator).map((el)=>el+=additionResult).join(separator);
 
-//   }
-//   // console.log(str);
-//   newString=str;
-//   if(options.repeatTimes!==undefined){
-//     for(let i=0;i<options.repeatTimes-1;i++){
-//       newString=newString.concat(options.seperator,str);
-//       }
-//   }
-
-// // console.log(str);
-// return newString;
 }
 
 module.exports = {
